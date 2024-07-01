@@ -1,7 +1,7 @@
 import os
-from flask_admin import Admin
+from flask_admin import Admin # type: ignore
 from models import db, User
-from flask_admin.contrib.sqla import ModelView
+from flask_admin.contrib.sqla import ModelView # type: ignore
 
 def setup_admin(app):
     app.secret_key = os.environ.get('FLASK_APP_KEY', 'sample key')
